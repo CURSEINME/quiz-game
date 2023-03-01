@@ -1,0 +1,30 @@
+.answers-container {
+  display: flex;
+  gap: 20px;
+}
+.btn {
+  border: 0.794239px solid #4D5B9E;
+  border-radius: 7.94239px;
+  background-color: #F5F7FB;
+
+  font-family: 'Inter';
+  font-size: 18px;
+  color: #293264;
+  
+  padding: 10px 30px;
+}
+.selected {
+  background: #D6DBF5;
+  border-radius: 7.94239px; 
+}
+.correct {
+  background: #94D7A2;
+  border-radius: 7.94239px;  
+}
+.disable {
+  opacity: 0.5;
+}
+.incorrect {
+  background: #F8BCBC;
+  border-radius: 7.71045px;  
+}

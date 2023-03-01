@@ -1,0 +1,33 @@
+.container {
+  position: relative;
+  background: #F5F7FB;
+
+  height: 100vh;
+}
+
+.container::after {
+  content: "";
+  background: url("../public/decor1.svg") no-repeat;
+  background-size: 250px;
+
+  width: 250px;
+  height: 200px;
+  /* background-pos; */
+
+  position: absolute;
+  
+  bottom: 0;
+}
+.container::before {
+  content: "";
+  background: url("../public/decor2.svg") no-repeat;
+  background-size: 250px;
+
+  width: 250px;
+  height: 200px;
+
+  position: absolute;
+
+  top: 0;
+  right: 0; 
+}
