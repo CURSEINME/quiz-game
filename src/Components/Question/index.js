@@ -44,7 +44,7 @@ export default function Question() {
 
   React.useEffect(() => {
     if (!gameOver) {
-      fetch("https://opentdb.com/api.php?amount=5&category=21&difficulty=hard&type=multiple")
+      fetch("https://opentdb.com/api.php?amount=5&category=15&difficulty=hard&type=multiple")
       .then(res => res.json())
       .then(data => setAllQuestions(data.results.map(item => {
         return {
