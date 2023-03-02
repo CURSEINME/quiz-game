@@ -57,8 +57,6 @@ export default function Question() {
     }
   },[gameOver])
 
-  console.log(allQuestions)
-
   return (
     <div className="question-container">
       {questions}

@@ -7,18 +7,17 @@ function Answers(props) {
 
   const allAnswers = answers.map(item => {
     return (
-      <li>
+      <li key={item.key}>
         <button 
+        dangerouslySetInnerHTML={{__html: item.value}}
         onClick={() => toggleSelect(item.id)}
         className={generateClass(item)}>
-        {item.value}
       </button>
       </li>
     )
   })
 
   React.useEffect(() => {
-    console.log("k")
     answers.map(item => {
       if (item.isCorrect) props.scoreCount()
     })
@@ -50,8 +49,6 @@ function Answers(props) {
 
     else return "btn"
   }
-
-  console.log(answers)
 
   function generateAnswers() {
     const answers = props.answers.map((item, i) => {

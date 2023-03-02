@@ -3,8 +3,9 @@
   background: #F5F7FB;
 
   height: 100vh;
-}
 
+  z-index: 0;
+}
 .container::after {
   content: "";
   background: url("../public/decor1.svg") no-repeat;
@@ -12,11 +13,12 @@
 
   width: 250px;
   height: 200px;
-  /* background-pos; */
 
   position: absolute;
   
   bottom: 0;
+
+  z-index: -1;
 }
 .container::before {
   content: "";
@@ -30,4 +32,6 @@
 
   top: 0;
   right: 0; 
+
+  z-index: -1;
 }
